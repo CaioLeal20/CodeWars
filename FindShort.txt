@@ -1,0 +1,17 @@
+import java.util.Arrays;
+//https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+public class FindShort {
+
+    public static int findShort(String s) {
+      String array[] = s.split(" ");
+      int shortest = array[0].length();
+		
+      for (int i = 1; i < array.length; i++) {
+	 if (array[i].length() < shortest) {
+	     shortest = array[i].length();
+	 }
+      }
+		
+    return shortest;
+    }
+}

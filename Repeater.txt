@@ -1,0 +1,12 @@
+public class Repeater {
+//https://www.codewars.com/kata/585a1a227cb58d8d740001c3
+  public static String repeat(String string,long n) {
+    String aux = "";
+    
+    for(int i = 0; i < n; i++) {
+       aux += string;
+    }
+    
+    return aux;
+  }
+}
