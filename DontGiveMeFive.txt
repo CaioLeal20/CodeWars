@@ -1,0 +1,19 @@
+public class DontGiveMeFive {
+//https://www.codewars.com/kata/5813d19765d81c592200001a
+  public static int dontGiveMeFive(int start, int end) {
+    int cont = 0;
+    String number = "";
+    
+    for (int i = start; i <= end; i++) {
+      number = i + "";
+      
+      if (number.contains("5")) {
+        cont += 0;
+      } else {
+          cont++;
+      }
+    }
+    
+    return cont;
+  }
+}
